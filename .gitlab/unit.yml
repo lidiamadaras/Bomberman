@@ -1,0 +1,12 @@
+
+image: python:3.9
+
+stages:
+  - test
+
+unittest:
+  stage: test
+  before_script:
+    - pip install -r requirements.txt 
+  script:
+    - python -m unittest tests/bomb_test.py tests/bomberman_test.py 

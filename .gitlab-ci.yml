@@ -1,0 +1,3 @@
+include:
+  - local: '.gitlab/unit.yml'
+  - local: '.gitlab/format.yml'
